@@ -1,25 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./resources/styles.css";
+
+import Header from "./components/header_footer/Header";
+import Featured from "../src/components/featured/index";
+import VenueInfo from "../src/components/venueInfo/index";
+import Highlights from "../src/components/highlights/index";
+import Pricing from "../src/components/Prices/index";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="App" style={{ height: "1500px", background:"cornflowerblue" }}>
+        <Header />
+        <Featured /> {/* einai to index to fearures*/}
+        <VenueInfo /> {/* einai to index VenueInfo*/}
+        <Highlights /> {/* einai to index Highlights*/}
+        <Pricing />
       </div>
     );
   }
