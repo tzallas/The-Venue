@@ -15,6 +15,7 @@ class App extends Component {
         <Featured /> {/* einai to index to fearures*/}
         <VenueInfo /> {/* einai to index VenueInfo*/}
         <Highlights /> {/* einai to index Highlights*/}
+        
         <Pricing />
       </div>
     );
